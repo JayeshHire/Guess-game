@@ -21,7 +21,7 @@ document.body.appendChild(para2);
 para.textContent = "";
 
 let randnum = Math.floor(Math.random()*100 - 1);
-console.log(randnum);
+
 
 const button = document.querySelector("button");
 button.addEventListener("click", test)
@@ -72,6 +72,10 @@ function test(){
 
     } else {
 
+    }
+
+    if( turns == 5){
+        console.log(randnum);
     }
 }
 
