@@ -20,7 +20,7 @@ document.body.appendChild(para);
 document.body.appendChild(para2);
 para.textContent = "";
 
-const randnum = Math.floor(Math.random()*100 - 1);
+let randnum = Math.floor(Math.random()*100 - 1);
 console.log(randnum);
 
 const button = document.querySelector("button");
@@ -93,6 +93,7 @@ function reset(){
     para2.style.backgroundColor = "white";
     para2.style.color = "black";
     para2.textContent = "";
+    randnum = Math.floor(Math.random()*100 - 1);
 }
 
 //created function for the actual purpose but it is not working now
